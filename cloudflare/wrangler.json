@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aihot",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "account_id": "46fad1b6b0e334ca8ad9ea7ec29c4ddb",
+  "kv_namespaces": [
+    {
+      "binding": "AIHOT_KV",
+      "id": "ab681c0cf05540cba587f5c8a7be7039"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "SITE_NAME": "🌸 AIHOT · 阿宁殿下的智能雷达",
+    "SITE_URL": "https://aihot.keelingai.workers.dev",
+    "DEEPSEEK_API_KEY": "",
+    "ADMIN_PASSWORD": "AningMaster2026!"
+  },
+  "triggers": {
+    "crons": [
+      "0 */2 * * *"
+    ]
+  }
+}
